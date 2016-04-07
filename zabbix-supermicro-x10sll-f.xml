@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>3.0</version>
-    <date>2016-04-07T06:56:36Z</date>
+    <date>2016-04-07T18:16:56Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -985,4 +985,498 @@
             <screens/>
         </template>
     </templates>
+    <triggers>
+        <trigger>
+            <expression>{IPMI Supermicro X10SLL-F:ipmi.volts.33vaux.last()}&lt;2.959 or {IPMI Supermicro X10SLL-F:ipmi.volts.33vaux.last()}&gt;3.554</expression>
+            <name>3.3v Aux Out of range</name>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{IPMI Supermicro X10SLL-F:ipmi.volts.33vcc.last()}&lt;2.959 or {IPMI Supermicro X10SLL-F:ipmi.volts.33vcc.last()}&gt;3.554</expression>
+            <name>3.3Vcc Out of range</name>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{IPMI Supermicro X10SLL-F:ipmi.volts.5vcc.last()}&lt;4.487 or {IPMI Supermicro X10SLL-F:ipmi.volts.5vcc.last()}&gt;5.378</expression>
+            <name>5Vcc Out of range</name>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{IPMI Supermicro X10SLL-F:ipmi.volts.12v.last()}&lt;10.784 or {IPMI Supermicro X10SLL-F:ipmi.volts.12v.last()}&gt;12.960</expression>
+            <name>12V Out of range</name>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{IPMI Supermicro X10SLL-F:ipmi.volts.12vbmc.last()}&lt;1.152 or {IPMI Supermicro X10SLL-F:ipmi.volts.12vbmc.last()}&gt;1.404</expression>
+            <name>BMC voltage Out of range</name>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description/>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{IPMI Supermicro X10SLL-F:ipmi.intrusion.chassis.last()}=0</expression>
+            <name>Chassis Intrusion</name>
+            <url/>
+            <status>0</status>
+            <priority>1</priority>
+            <description/>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{IPMI Supermicro X10SLL-F:ipmi.temp.cpu.last()}&gt;80</expression>
+            <name>CPU Temp High</name>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description/>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{IPMI Supermicro X10SLL-F:ipmi.temp.cpu.last()}&gt;90</expression>
+            <name>CPU Temp Over</name>
+            <url/>
+            <status>0</status>
+            <priority>5</priority>
+            <description/>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{IPMI Supermicro X10SLL-F:ipmi.temp.cpu.last()}&gt;88</expression>
+            <name>CPU Temp Very High</name>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{IPMI Supermicro X10SLL-F:ipmi.fans.fan1.last()}&lt;100</expression>
+            <name>FAN 1 low</name>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{IPMI Supermicro X10SLL-F:ipmi.fans.fan2.last()}&lt;100</expression>
+            <name>FAN 2 low</name>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{IPMI Supermicro X10SLL-F:ipmi.fans.fan3.last()}&lt;100</expression>
+            <name>FAN 3 low</name>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{IPMI Supermicro X10SLL-F:ipmi.fans.fana.last()}&lt;100</expression>
+            <name>FAN A Low</name>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description/>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{IPMI Supermicro X10SLL-F:ipmi.temp.pch.last()}&gt;90</expression>
+            <name>PCH Temp Over</name>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{IPMI Supermicro X10SLL-F:ipmi.volts.105vpch.last()}&lt;0.942 or {IPMI Supermicro X10SLL-F:ipmi.volts.105vpch.last()}&gt;1.194</expression>
+            <name>PCH voltage out of range</name>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{IPMI Supermicro X10SLL-F:ipmi.temp.dimm1a.last()}&gt;70 or  {IPMI Supermicro X10SLL-F:ipmi.temp.dimma2.last()}&gt;70 or  {IPMI Supermicro X10SLL-F:ipmi.temp.dimmb1.last()}&gt;70 or  {IPMI Supermicro X10SLL-F:ipmi.temp.dimmb2.last()}&gt;70</expression>
+            <name>RAM Temp Over</name>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{IPMI Supermicro X10SLL-F:ipmi.volts.vbat.last()}&lt;2.580 or {IPMI Supermicro X10SLL-F:ipmi.volts.vbat.last()}&gt;3.476</expression>
+            <name>VBAT Out of range</name>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{IPMI Supermicro X10SLL-F:ipmi.volts.cpu.last()}&lt;1.395 or {IPMI Supermicro X10SLL-F:ipmi.volts.cpu.last()}&gt;1.899</expression>
+            <name>Vcpu Out of Range</name>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{IPMI Supermicro X10SLL-F:ipmi.volts.dimm.last()}&lt;1.200 or {IPMI Supermicro X10SLL-F:ipmi.volts.dimm.last()}&gt;1.641</expression>
+            <name>VDIMM Out of range</name>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+    </triggers>
+    <graphs>
+        <graph>
+            <name>Fans</name>
+            <width>900</width>
+            <height>200</height>
+            <yaxismin>0.0000</yaxismin>
+            <yaxismax>100.0000</yaxismax>
+            <show_work_period>1</show_work_period>
+            <show_triggers>1</show_triggers>
+            <type>0</type>
+            <show_legend>1</show_legend>
+            <show_3d>0</show_3d>
+            <percent_left>0.0000</percent_left>
+            <percent_right>0.0000</percent_right>
+            <ymin_type_1>0</ymin_type_1>
+            <ymax_type_1>0</ymax_type_1>
+            <ymin_item_1>0</ymin_item_1>
+            <ymax_item_1>0</ymax_item_1>
+            <graph_items>
+                <graph_item>
+                    <sortorder>0</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>1A7C11</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>IPMI Supermicro X10SLL-F</host>
+                        <key>ipmi.fans.fana</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>1</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>F63100</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>IPMI Supermicro X10SLL-F</host>
+                        <key>ipmi.fans.fan1</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>2</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>2774A4</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>IPMI Supermicro X10SLL-F</host>
+                        <key>ipmi.fans.fan2</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>3</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>A54F10</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>IPMI Supermicro X10SLL-F</host>
+                        <key>ipmi.fans.fan3</key>
+                    </item>
+                </graph_item>
+            </graph_items>
+        </graph>
+        <graph>
+            <name>Temperatures</name>
+            <width>900</width>
+            <height>200</height>
+            <yaxismin>0.0000</yaxismin>
+            <yaxismax>100.0000</yaxismax>
+            <show_work_period>1</show_work_period>
+            <show_triggers>1</show_triggers>
+            <type>0</type>
+            <show_legend>1</show_legend>
+            <show_3d>0</show_3d>
+            <percent_left>0.0000</percent_left>
+            <percent_right>0.0000</percent_right>
+            <ymin_type_1>0</ymin_type_1>
+            <ymax_type_1>0</ymax_type_1>
+            <ymin_item_1>0</ymin_item_1>
+            <ymax_item_1>0</ymax_item_1>
+            <graph_items>
+                <graph_item>
+                    <sortorder>0</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>1A7C11</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>IPMI Supermicro X10SLL-F</host>
+                        <key>ipmi.temp.cpu</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>1</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>F63100</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>IPMI Supermicro X10SLL-F</host>
+                        <key>ipmi.temp.peripheral</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>2</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>AC8C14</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>IPMI Supermicro X10SLL-F</host>
+                        <key>ipmi.temp.system</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>3</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>611F27</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>IPMI Supermicro X10SLL-F</host>
+                        <key>ipmi.temp.pch</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>4</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>2774A4</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>IPMI Supermicro X10SLL-F</host>
+                        <key>ipmi.temp.dimm1a</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>5</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>A54F10</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>IPMI Supermicro X10SLL-F</host>
+                        <key>ipmi.temp.dimma2</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>6</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>FC6EA3</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>IPMI Supermicro X10SLL-F</host>
+                        <key>ipmi.temp.dimmb1</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>7</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>6C59DC</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>IPMI Supermicro X10SLL-F</host>
+                        <key>ipmi.temp.dimmb2</key>
+                    </item>
+                </graph_item>
+            </graph_items>
+        </graph>
+        <graph>
+            <name>Voltages</name>
+            <width>900</width>
+            <height>200</height>
+            <yaxismin>0.0000</yaxismin>
+            <yaxismax>100.0000</yaxismax>
+            <show_work_period>1</show_work_period>
+            <show_triggers>1</show_triggers>
+            <type>0</type>
+            <show_legend>1</show_legend>
+            <show_3d>0</show_3d>
+            <percent_left>0.0000</percent_left>
+            <percent_right>0.0000</percent_right>
+            <ymin_type_1>0</ymin_type_1>
+            <ymax_type_1>0</ymax_type_1>
+            <ymin_item_1>0</ymin_item_1>
+            <ymax_item_1>0</ymax_item_1>
+            <graph_items>
+                <graph_item>
+                    <sortorder>0</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>1A7C11</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>IPMI Supermicro X10SLL-F</host>
+                        <key>ipmi.volts.105vpch</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>1</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>F63100</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>IPMI Supermicro X10SLL-F</host>
+                        <key>ipmi.volts.12vbmc</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>2</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>2774A4</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>IPMI Supermicro X10SLL-F</host>
+                        <key>ipmi.volts.33vaux</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>3</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>A54F10</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>IPMI Supermicro X10SLL-F</host>
+                        <key>ipmi.volts.33vcc</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>4</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>FC6EA3</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>IPMI Supermicro X10SLL-F</host>
+                        <key>ipmi.volts.5vcc</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>5</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>6C59DC</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>IPMI Supermicro X10SLL-F</host>
+                        <key>ipmi.volts.12v</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>6</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>AC8C14</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>IPMI Supermicro X10SLL-F</host>
+                        <key>ipmi.volts.vbat</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>7</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>611F27</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>IPMI Supermicro X10SLL-F</host>
+                        <key>ipmi.volts.dimm</key>
+                    </item>
+                </graph_item>
+            </graph_items>
+        </graph>
+    </graphs>
 </zabbix_export>
