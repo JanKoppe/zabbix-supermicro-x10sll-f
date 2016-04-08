@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>3.0</version>
-    <date>2016-04-07T18:16:56Z</date>
+    <date>2016-04-08T10:52:24Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -39,10 +39,10 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>ipmi.fans.fan1</key>
-                    <delay>300</delay>
+                    <delay>15</delay>
                     <history>90</history>
                     <trends>365</trends>
-                    <status>0</status>
+                    <status>1</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units>RPM</units>
@@ -82,10 +82,10 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>ipmi.fans.fan2</key>
-                    <delay>300</delay>
+                    <delay>15</delay>
                     <history>90</history>
                     <trends>365</trends>
-                    <status>0</status>
+                    <status>1</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units>RPM</units>
@@ -125,7 +125,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>ipmi.fans.fan3</key>
-                    <delay>300</delay>
+                    <delay>15</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -168,7 +168,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>ipmi.fans.fana</key>
-                    <delay>300</delay>
+                    <delay>15</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -211,10 +211,10 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>ipmi.intrusion.chassis</key>
-                    <delay>1200</delay>
+                    <delay>15</delay>
                     <history>90</history>
                     <trends>365</trends>
-                    <status>0</status>
+                    <status>1</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
@@ -254,7 +254,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>ipmi.temp.cpu</key>
-                    <delay>30</delay>
+                    <delay>15</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -297,7 +297,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>ipmi.temp.dimm1a</key>
-                    <delay>30</delay>
+                    <delay>15</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>1</status>
@@ -340,7 +340,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>ipmi.temp.dimma2</key>
-                    <delay>30</delay>
+                    <delay>15</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -383,7 +383,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>ipmi.temp.dimmb1</key>
-                    <delay>30</delay>
+                    <delay>15</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>1</status>
@@ -426,7 +426,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>ipmi.temp.dimmb2</key>
-                    <delay>30</delay>
+                    <delay>15</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -469,7 +469,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>ipmi.temp.pch</key>
-                    <delay>30</delay>
+                    <delay>15</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -512,7 +512,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>ipmi.temp.peripheral</key>
-                    <delay>30</delay>
+                    <delay>15</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -555,7 +555,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>ipmi.temp.system</key>
-                    <delay>30</delay>
+                    <delay>15</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -598,7 +598,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>ipmi.volts.5vcc</key>
-                    <delay>300</delay>
+                    <delay>15</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -641,7 +641,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>ipmi.volts.12v</key>
-                    <delay>300</delay>
+                    <delay>15</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -684,7 +684,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>ipmi.volts.12vbmc</key>
-                    <delay>300</delay>
+                    <delay>15</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -727,7 +727,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>ipmi.volts.33vaux</key>
-                    <delay>300</delay>
+                    <delay>15</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -770,7 +770,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>ipmi.volts.33vcc</key>
-                    <delay>300</delay>
+                    <delay>15</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -813,7 +813,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>ipmi.volts.105vpch</key>
-                    <delay>300</delay>
+                    <delay>15</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -856,7 +856,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>ipmi.volts.cpu</key>
-                    <delay>30</delay>
+                    <delay>15</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -899,7 +899,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>ipmi.volts.dimm</key>
-                    <delay>30</delay>
+                    <delay>15</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -942,7 +942,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>ipmi.volts.vbat</key>
-                    <delay>300</delay>
+                    <delay>15</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1040,7 +1040,7 @@
             <expression>{IPMI Supermicro X10SLL-F:ipmi.intrusion.chassis.last()}=0</expression>
             <name>Chassis Intrusion</name>
             <url/>
-            <status>0</status>
+            <status>1</status>
             <priority>1</priority>
             <description/>
             <type>0</type>
@@ -1183,7 +1183,7 @@
             <width>900</width>
             <height>200</height>
             <yaxismin>0.0000</yaxismin>
-            <yaxismax>100.0000</yaxismax>
+            <yaxismax>3000.0000</yaxismax>
             <show_work_period>1</show_work_period>
             <show_triggers>1</show_triggers>
             <type>0</type>
@@ -1191,8 +1191,8 @@
             <show_3d>0</show_3d>
             <percent_left>0.0000</percent_left>
             <percent_right>0.0000</percent_right>
-            <ymin_type_1>0</ymin_type_1>
-            <ymax_type_1>0</ymax_type_1>
+            <ymin_type_1>1</ymin_type_1>
+            <ymax_type_1>1</ymax_type_1>
             <ymin_item_1>0</ymin_item_1>
             <ymax_item_1>0</ymax_item_1>
             <graph_items>
@@ -1250,8 +1250,8 @@
             <name>Temperatures</name>
             <width>900</width>
             <height>200</height>
-            <yaxismin>0.0000</yaxismin>
-            <yaxismax>100.0000</yaxismax>
+            <yaxismin>20.0000</yaxismin>
+            <yaxismax>105.0000</yaxismax>
             <show_work_period>1</show_work_period>
             <show_triggers>1</show_triggers>
             <type>0</type>
@@ -1259,8 +1259,8 @@
             <show_3d>0</show_3d>
             <percent_left>0.0000</percent_left>
             <percent_right>0.0000</percent_right>
-            <ymin_type_1>0</ymin_type_1>
-            <ymax_type_1>0</ymax_type_1>
+            <ymin_type_1>1</ymin_type_1>
+            <ymax_type_1>1</ymax_type_1>
             <ymin_item_1>0</ymin_item_1>
             <ymax_item_1>0</ymax_item_1>
             <graph_items>
@@ -1383,6 +1383,18 @@
                 <graph_item>
                     <sortorder>0</sortorder>
                     <drawtype>0</drawtype>
+                    <color>F230E0</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>IPMI Supermicro X10SLL-F</host>
+                        <key>ipmi.volts.cpu</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>1</sortorder>
+                    <drawtype>0</drawtype>
                     <color>1A7C11</color>
                     <yaxisside>0</yaxisside>
                     <calc_fnc>2</calc_fnc>
@@ -1393,7 +1405,7 @@
                     </item>
                 </graph_item>
                 <graph_item>
-                    <sortorder>1</sortorder>
+                    <sortorder>2</sortorder>
                     <drawtype>0</drawtype>
                     <color>F63100</color>
                     <yaxisside>0</yaxisside>
@@ -1405,7 +1417,7 @@
                     </item>
                 </graph_item>
                 <graph_item>
-                    <sortorder>2</sortorder>
+                    <sortorder>3</sortorder>
                     <drawtype>0</drawtype>
                     <color>2774A4</color>
                     <yaxisside>0</yaxisside>
@@ -1417,7 +1429,7 @@
                     </item>
                 </graph_item>
                 <graph_item>
-                    <sortorder>3</sortorder>
+                    <sortorder>4</sortorder>
                     <drawtype>0</drawtype>
                     <color>A54F10</color>
                     <yaxisside>0</yaxisside>
@@ -1429,7 +1441,7 @@
                     </item>
                 </graph_item>
                 <graph_item>
-                    <sortorder>4</sortorder>
+                    <sortorder>5</sortorder>
                     <drawtype>0</drawtype>
                     <color>FC6EA3</color>
                     <yaxisside>0</yaxisside>
@@ -1441,7 +1453,7 @@
                     </item>
                 </graph_item>
                 <graph_item>
-                    <sortorder>5</sortorder>
+                    <sortorder>6</sortorder>
                     <drawtype>0</drawtype>
                     <color>6C59DC</color>
                     <yaxisside>0</yaxisside>
@@ -1453,7 +1465,7 @@
                     </item>
                 </graph_item>
                 <graph_item>
-                    <sortorder>6</sortorder>
+                    <sortorder>7</sortorder>
                     <drawtype>0</drawtype>
                     <color>AC8C14</color>
                     <yaxisside>0</yaxisside>
@@ -1465,7 +1477,7 @@
                     </item>
                 </graph_item>
                 <graph_item>
-                    <sortorder>7</sortorder>
+                    <sortorder>8</sortorder>
                     <drawtype>0</drawtype>
                     <color>611F27</color>
                     <yaxisside>0</yaxisside>
